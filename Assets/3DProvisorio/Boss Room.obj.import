@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Boss Room.obj-a8faba46c22de8d25f822f7e2f02e73e.mesh"
+
+[deps]
+
+files=[ "res://.import/Boss Room.obj-a8faba46c22de8d25f822f7e2f02e73e.mesh" ]
+
+source_file="res://Assets/3DProvisorio/Boss Room.obj"
+dest_files=[ "res://.import/Boss Room.obj-a8faba46c22de8d25f822f7e2f02e73e.mesh", "res://.import/Boss Room.obj-a8faba46c22de8d25f822f7e2f02e73e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
