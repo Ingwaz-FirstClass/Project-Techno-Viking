@@ -1,79 +1,63 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/3DProvisorio/Boss Room.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Assets/3DProvisorio/Boss Room.png" type="Texture" id=2]
+[ext_resource path="res://Assets/corrupted-dirt-block-with-grass.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/palette(Clone).png" type="Texture" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Player/Player.gd" type="Script" id=4]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 2.39374, 0.588622, 2.35261 )
+extents = Vector3( 4.18117, 1.06961, 4.04491 )
 
 [node name="Cena da bagunça" type="Node"]
 
 [node name="Blocos" type="Node" parent="."]
 
-[node name="Bloco" type="StaticBody" parent="Blocos"]
+[node name="Block" type="StaticBody" parent="Blocos"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Boss Room" type="MeshInstance" parent="Blocos/Bloco"]
+[node name="MeshInstance" type="MeshInstance" parent="Blocos/Block"]
 mesh = ExtResource( 1 )
-skeleton = NodePath("../../..")
+skeleton = NodePath("")
 material/0 = SubResource( 1 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Blocos/Bloco"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.410954, 0 )
+[node name="CollisionShape" type="CollisionShape" parent="Blocos/Block"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.0745, 0 )
 shape = SubResource( 2 )
 
-[node name="Bloco2" type="StaticBody" parent="Blocos"]
-transform = Transform( 0.0110652, 0, -0.999939, 0, 1, 0, 0.999939, 0, 0.0110652, 0, 0, 4.85288 )
+[node name="Block2" type="StaticBody" parent="Blocos"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.09962, -3, 0 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Boss Room" type="MeshInstance" parent="Blocos/Bloco2"]
+[node name="MeshInstance" type="MeshInstance" parent="Blocos/Block2"]
 mesh = ExtResource( 1 )
-skeleton = NodePath("../../..")
+skeleton = NodePath("")
 material/0 = SubResource( 1 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Blocos/Bloco2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.410954, 0 )
+[node name="CollisionShape" type="CollisionShape" parent="Blocos/Block2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.0745, 0 )
 shape = SubResource( 2 )
 
-[node name="Bloco3" type="StaticBody" parent="Blocos"]
-transform = Transform( -0.999969, 0, -0.00787137, 0, 1, 0, 0.00787137, 0, -0.999969, -4.86631, 0, 4.85288 )
+[node name="Block3" type="StaticBody" parent="Blocos"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.09962, -3, 8.55147 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Boss Room" type="MeshInstance" parent="Blocos/Bloco3"]
+[node name="MeshInstance" type="MeshInstance" parent="Blocos/Block3"]
 mesh = ExtResource( 1 )
-skeleton = NodePath("../../..")
+skeleton = NodePath("")
 material/0 = SubResource( 1 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Blocos/Bloco3"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.410954, 0 )
-shape = SubResource( 2 )
-
-[node name="Bloco4" type="StaticBody" parent="Blocos"]
-transform = Transform( 0.0173477, 0, 0.999849, 0, 1, 0, -0.999849, 0, 0.0173477, -4.86631, 0, 0.052722 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Boss Room" type="MeshInstance" parent="Blocos/Bloco4"]
-mesh = ExtResource( 1 )
-skeleton = NodePath("../../..")
-material/0 = SubResource( 1 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Blocos/Bloco4"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.410954, 0 )
+[node name="CollisionShape" type="CollisionShape" parent="Blocos/Block3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.0745, 0 )
 shape = SubResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 65.9352, 0 )
-script = ExtResource( 4 )
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -2.80276, 3.86051, 0.767719 )

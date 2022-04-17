@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/corrupted-dirt-block-with-grass.obj-3b0d69b72408d042a8f94c0700cff703.mesh"
+
+[deps]
+
+files=[ "res://.import/corrupted-dirt-block-with-grass.obj-3b0d69b72408d042a8f94c0700cff703.mesh" ]
+
+source_file="res://Assets/3DProvisorio/corrupted-dirt-block-with-grass.obj"
+dest_files=[ "res://.import/corrupted-dirt-block-with-grass.obj-3b0d69b72408d042a8f94c0700cff703.mesh", "res://.import/corrupted-dirt-block-with-grass.obj-3b0d69b72408d042a8f94c0700cff703.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
