@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Project Techno Viking"
+run/main_scene="res://Worlds/Cena da bagunça.tscn"
 config/icon="res://icon.png"
 
 [physics]
